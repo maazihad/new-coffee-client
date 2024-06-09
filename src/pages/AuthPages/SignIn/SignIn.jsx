@@ -20,7 +20,7 @@ const SignIn = () => {
         };
 
         //=======Patch update=========
-        fetch('http://localhost:5000/users', {
+        fetch('https://coffee-house-server.onrender.com/users', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(user),

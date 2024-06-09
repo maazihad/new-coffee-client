@@ -9,7 +9,7 @@ const Home = () => {
 
   const onDelete = (id) => {
     console.log('delete id : ', id);
-    fetch(`http://localhost:5000/coffee/${id}`, {
+    fetch(`https://coffee-house-server.onrender.com/coffee/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())

@@ -16,7 +16,7 @@ const AddCoffee = () => {
     // Handle form submission
     console.log('Coffee added:', newCoffee);
 
-    fetch('http://localhost:5000/coffee', {
+    fetch('https://coffee-house-server.onrender.com/coffee', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newCoffee),
